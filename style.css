@@ -1,0 +1,155 @@
+:root{
+    --basic_color : #ff7a5c;
+}
+
+::placeholder{
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+
+body{
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+
+.Arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.none{
+    display: none !important;
+}
+
+.flex{
+    display: flex !important;
+}
+
+.Bold{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.Space-between{
+    letter-spacing: 0.5rem;
+}
+
+.input{
+    padding: 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    caret-color: var(--basic_color);
+}
+
+.input:focus{
+    border-bottom: 2px solid var(--basic_color);
+}
+
+.btn{
+    border: none;
+    background-color: var(--basic_color);
+    cursor: pointer;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.user{
+    grid-area: user;
+}
+
+.email{
+    grid-area: email;
+}
+
+.lls{
+    letter-spacing: 0.4rem !important;
+}
+
+.cols{
+    flex-direction: column;
+}
+
+.white{
+    background: white;
+}
+
+.md-radius{
+    border-radius: 10px;
+}
+
+.nls{
+    letter-spacing: 0.1rem !important;
+    text-transform: lowercase;
+}
+
+.nrmg{
+    margin: 2rem 3rem 0rem 3rem;
+}
+
+.pw{
+    letter-spacing: 1rem;
+}
+
+.nrmgb{
+    margin: 2rem 3rem 1rem 3rem;
+}
+
+.link{
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--basic_color);
+}
+
+.btnd{
+    cursor: pointer;
+    color: #272829;
+    background-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+}
+
+.btnd:hover{
+    text-decoration: underline;
+}
+
+#join_box{
+    display: grid;
+    grid-template-areas:
+    'user user user user'
+    'email email email email';
+}
+
+.op{
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .btnd {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
