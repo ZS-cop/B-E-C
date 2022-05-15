@@ -1,17 +1,18 @@
-:root{
-    --basic_color : #ff7a5c;
+:root {
+    --basic_color: #ff7a5c;
 }
 
-::placeholder{
+::placeholder {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
 
 
-html{
+html {
     overflow: hidden;
 }
-body{
+
+body {
     height: 100vh;
     background-color: rgb(238, 238, 238);
     display: flex;
@@ -20,29 +21,32 @@ body{
     user-select: none;
 }
 
+.dark{
+    filter: invert(1) hue-rotate(180deg)
+}
 
-.Arial{
+.Arial {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.none{
+.none {
     display: none !important;
 }
 
-.flex{
+.flex {
     display: flex !important;
 }
 
-.Bold{
+.Bold {
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.Space-between{
+.Space-between {
     letter-spacing: 0.5rem;
 }
 
-.input{
+.input {
     padding: 5px;
     text-align: center;
     border: none;
@@ -52,11 +56,24 @@ body{
     caret-color: var(--basic_color);
 }
 
-.input:focus{
+.input:focus {
     border-bottom: 2px solid var(--basic_color);
 }
 
-.btn{
+.inputa {
+    padding: 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    letter-spacing: 0.2rem;
+    caret-color: var(--basic_color);
+}
+
+.inputa:focus {
+    border-bottom: 2px solid var(--basic_color);
+}
+
+.btn {
     border: none;
     background-color: var(--basic_color);
     cursor: pointer;
@@ -67,62 +84,55 @@ body{
     font-weight: bold;
 }
 
-.shadow{
+.shadow {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.center{
+
+.center {
     display: flex;
     justify-content: center;
 }
 
-/* .user{
-    grid-area: user;
-} */
-
-/* .email{
-    grid-area: email;
-} */
-
-.lls{
+.lls {
     letter-spacing: 0.4rem !important;
 }
 
-.cols{
+.cols {
     flex-direction: column;
 }
 
-.white{
+.white {
     background: white;
 }
 
-.md-radius{
+.md-radius {
     border-radius: 10px;
 }
 
-.nls{
+.nls {
     letter-spacing: 0.1rem !important;
     text-transform: lowercase;
 }
 
-.nrmg{
+.nrmg {
     margin: 2rem 3rem 0rem 3rem;
 }
 
-.pw{
+.pw {
     letter-spacing: 1rem;
 }
 
-.nrmgb{
+.nrmgb {
     margin: 2rem 3rem 1rem 3rem;
 }
 
-.link{
+.link {
     cursor: pointer;
     font-weight: bold;
     color: var(--basic_color);
 }
 
-.btnd{
+.btnd {
     cursor: pointer;
     color: white;
     font-weight: bold;
@@ -135,35 +145,47 @@ body{
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--basic_color); }
-    10% {     box-shadow: 0 0 0 0.5em var(--basic_color);}
-  }
+    0% {
+        background-color: transparent;
+        color: black;
+        font-weight: normal;
+        box-shadow: 0 0 0 2em var(--basic_color);
+        letter-spacing: 2mm;
+    }
 
-.btnd:hover , .btnd:focus{
-    animation: pulse 2s;
-    background-color: transparent;
-    color: black;
-    font-weight: normal;
-    letter-spacing: 1mm;
+    10% {
+        background-color: transparent;
+        color: black;
+        font-weight: normal;
+        box-shadow: 0 0 0 1em var(--basic_color);
+        letter-spacing: 2.5mm;
+    }
+
+    15% {
+        background-color: transparent;
+        letter-spacing: 2.5mm;
+        box-shadow: 0 0 0 0.5em var(--basic_color);
+        color: black;
+        font-weight: normal;
+    }
+
+    50% {
+        background-color: var(--basic_color);
+        font-weight: bold;
+        letter-spacing: normal;
+        color: white;
+    }
 }
 
-/* #join_box{
-    display: grid;
-    grid-template-areas:
-    'user user user user'
-    'email email email email';
-} */
+.btnd:hover,
+.btnd:focus {
+    animation: pulse 2s;
+}
 
-.op{
+.op {
     opacity: 0.5;
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .btnd {
-      width: 60%;
-      display: flex;
-      justify-content: center;
-    }
-  }
-  
+}
