@@ -22,7 +22,8 @@ body {
 }
 
 .dark{
-    filter: invert(1) hue-rotate(180deg)
+    color:white;
+    background-color: rgb(35, 34, 34);
 }
 
 .Arial {
